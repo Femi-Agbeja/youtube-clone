@@ -1,0 +1,81 @@
+.image {
+  width: 100%;
+  cursor: pointer;
+}
+
+
+.videoTitle {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.videoInfogrid {
+display: grid;
+grid-template-columns: 50px 1fr;
+}
+
+.profilePics {
+width: 36px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.thumbnailRow {
+margin-bottom: 8px;
+position: relative;
+}
+
+.videoAuthor, .videoStat {
+font-size: 12px;
+color: rgb(96, 96, 96);
+}
+
+.videoAuthor {
+margin-bottom: 4px;
+}
+
+.videoGrid {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 16px;
+row-gap: 40px;
+}
+
+/* The below is for Responsive Design. */
+/* If the screen size is less than or equals to 750px, then only 2 videos will show per grid */
+@media (max-width: 750px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* If the screen size is greater than or equals to 751px and less than or equals to 999px, then only 3 videos will show per grid */
+@media (min-width: 751px) and (max-with: 999px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* If the screen size is greater than or equals to 1000px, then 4 videos will show per grid */
+@media (min-width: 1000px) {
+  .videoGrid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.videoTime {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
